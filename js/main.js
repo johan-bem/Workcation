@@ -7,4 +7,7 @@ document.getElementById("menu").addEventListener("click",function(){
 
 document.getElementById('filters').addEventListener('click',function(){
   document.getElementById('features').classList.toggle('deploy');
-})
+});
+document.getElementById('filters').addEventListener('click',function(){
+  document.getElementById('ad').classList.toggle('shift');
+});

@@ -792,3 +792,12 @@ body {
     width: 3px;
     display: inline-block;
     margin: 0 4px 2px 4px; }
+
+.shift {
+  top: 50rem; }
+  @media screen and (min-width: 760px) {
+    .shift {
+      top: 28rem; } }
+  @media screen and (min-width: 1024px) {
+    .shift {
+      top: 22.5rem; } }
