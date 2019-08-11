@@ -1,0 +1,127 @@
+
+.list{
+    display:none;
+    position:absolute;
+    width: 100%;
+    background: $blue-900;
+    top: 100%;
+    left: 0px ;
+      @media screen and (min-width: 760px){
+        display: block;
+        position:relative;
+        width: normal;
+        top: 0;
+      }
+      @media screen and (min-width: 1200px){
+        position: initial;
+      }
+        
+      &__line{
+      height: 2px;
+      background: $blue-800;
+      border: 1px $blue-800;
+      width: 100%;
+      right: 0;
+      position: absolute;
+      margin-top: 6%;
+        @media screen and (min-width: 760px){
+          display: none;
+        }
+    }
+    
+    &__container{
+      list-style:none;
+      line-height: 2.3rem;
+      margin: 0;
+      font-size: 1rem;
+      font-weight: normal;
+      font-style: normal;
+      padding: .5rem 1.5rem 1rem 1.5rem ;
+        @media screen and (min-width: 760px){
+          line-height: 0;
+          padding: 0;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+        }
+            @media screen and (min-width: 1200px){
+              position: absolute;
+              left: 55%;
+              width: 42%;
+              top:0;
+              height: 100%;
+              z-index: 300;
+            }
+    }
+
+    &__item{
+      @media screen and (min-width: 1200px){
+      }
+      &--image{
+        display: flex;
+        align-items: center;
+        margin: 2rem 0 1.5rem;
+        padding: .2rem 0 0 .5rem;
+        }
+      @media screen and (min-width: 760px){
+        display: inline;
+        margin: 0;
+        padding: 0;
+      }
+        
+    }
+
+    &__user{
+      border-radius: 100%;
+      margin-right: 1.3rem;
+        @media screen and (min-width: 760px){
+        margin: 0;
+        border: 3px solid $blue-250;
+        }
+        @media screen and (min-width: 1200px){
+          position: relative;
+          left: 6rem;
+          border: 2px solid $white-200;
+        }
+    }
+
+    &__anchor{
+      text-decoration: none;
+      color: $white-100;
+        &--name{
+          display: none;
+      }
+      @media screen and (min-width: 760px){
+        font-size: 0.875rem;
+        margin-right: 2.5rem;
+        }
+        @media screen and (min-width: 1200px){
+          font-weight: 500;
+          color: $blue-900;
+        } 
+    }
+    
+    &__anchor--color{
+      color: $gray-100;
+      font-weight: 300;
+      @media screen and (min-width: 760px){
+        display: none;
+      }
+    }
+
+    &__anchor--sup{
+      @media screen and (min-width: 1200px){
+        display: block;
+        position: relative;
+        right: 3rem;
+        color: $blue-900;
+        font-weight: 500;
+      }
+    }
+
+  }
+  
+.show{
+    display: block; 
+    transition: all 5s;
+  }

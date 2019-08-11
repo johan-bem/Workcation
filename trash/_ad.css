@@ -1,0 +1,18 @@
+.ad {
+  border: 1px solid red; }
+  .ad__image {
+    border-radius: .5rem; }
+  .ad__box {
+    display: block;
+    border: 1px solid violet; }
+  .ad__plus {
+    display: inline;
+    border-radius: 1.2rem;
+    padding: 0 .5rem;
+    font-size: .75rem; }
+  .ad__beds {
+    font-size: .75rem;
+    color: red;
+    border: 8px solid blue; }
+  .ad__baths {
+    font-size: .75rem; }

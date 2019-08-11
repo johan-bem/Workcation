@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/normalize.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="shorcut icon" href="#"/>
+    <title>Worcation</title>
+  </head>
+  <body>
+    <div class="maina">
+      <div class="menu">
+        <div class="menu__container">
+          <div class="menu__title">
+            <svg width="45" height="30" viewBox="0 0 45 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M42.9111 11.6044L35.2129 7.15965V27.8051H44.2129V29.8051H0.212891V27.8051H4.21289V15.0858L0.485071 16.0177L0 14.0774L21.0896 8.80505H24.2119C23.8673 9.62247 23.6383 10.4844 23.5316 11.3637L23.0495 15.3386L28.2129 12.3574V27.8051H33.2129V7.16087L25.5166 11.6045C25.7383 9.77684 26.6279 8.04857 28.082 6.80504H23.9629C25.3311 4.98338 27.5098 3.80504 29.9639 3.80504C30.1807 3.80504 30.3965 3.81431 30.6084 3.8325L25.0166 0.603865C27.1123 -0.289568 29.5879 -0.220842 31.7129 1.00609C32.752 1.60582 33.5938 2.41673 34.2139 3.35325C34.834 2.41673 35.6748 1.60582 36.7139 1.00609C38.8389 -0.220842 41.3154 -0.289568 43.4111 0.603865L37.8184 3.8325C38.0312 3.81431 38.2471 3.80504 38.4648 3.80504C40.918 3.80504 43.0967 4.98338 44.4648 6.80504H40.3447C41.7998 8.04857 42.6895 9.77684 42.9111 11.6044ZM24.2129 27.8051V17.8051H18.2129V27.8051H24.2129ZM13.2129 19.8051C13.2129 20.9096 12.3175 21.8051 11.2129 21.8051C10.1083 21.8051 9.21289 20.9096 9.21289 19.8051C9.21289 18.7005 10.1083 17.8051 11.2129 17.8051C12.3175 17.8051 13.2129 18.7005 13.2129 19.8051Z" fill="#A3BFFA"></path>
+            </svg>
+            <h1 class="menu__text">Work<span class="menu__text--color">cation</span></h1>
+          </div>
+          <div class="menu__logo" id="menu">
+            <div class="menu__inner"></div>
+          </div>
+          <nav class="list" id="navega">
+            <ul class="list__container">
+              <li class="list__item"> <a class="list__anchor" href="#">List your property</a></li>
+              <li class="list__item"><a class="list__anchor" href="#">Trips</a></li>
+              <li class="list__item"><a class="list__anchor" href="#">Messages</a></li>
+              <hr class="list__line"/>
+              <li class="list__item list__item--image"><img class="list__user" src="./images/girl.png"/><a class="list__anchor list__anchor--name" href="#">Isla Schoger</a></li>
+              <li class="list__item"><a class="list__anchor list__anchor--color" href="#">Account Settings</a></li>
+              <li class="list__item"><a class="list__anchor list__anchor--color list__anchor--sup" href="#">Support</a></li>
+              <li class="list__item"><a class="list__anchor list__anchor--color" href="#">Sing out</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="box" id="box">
+        <div class="box__box">
+          <input class="box__text" type="text" placeholder="Search by keywords"/>
+          <button class="box__button" id="filters">
+            <div class="box__container"><span class="box__lines box__lines--mod"></span></div><span class="box__word">Filters</span>
+          </button>
+          <form class="data" id="features" action="define la locación (una URL) desde donde la información recolectada por el formulario debería enviarse." method="define con que método HTTP se enviará la información (puede ser get o post">
+            <div class="master">
+              <div class="room">
+                <div class="room__box">
+                  <label class="room__name" type="text">Bedrooms</label>
+                  <select class="room__options" id="bedrooms">
+                    <option class="room__item" value="1">1</option>
+                    <option class="room__item" value="2">2</option>
+                    <option class="room__item" value="3">3</option>
+                    <option class="room__item" value="4">4</option>
+                  </select>
+                </div>
+                <div class="room__box">
+                  <label class="room__name" type="text">Bathrooms</label>
+                  <select class="room__options" id="bedrooms">
+                    <option class="room__item" value="1">1</option>
+                    <option class="room__item" value="2">2</option>
+                  </select>
+                </div>
+                <div class="room__box room__box--large">
+                  <label class="room__name" type="text">Price Range</label>
+                  <select class="room__options room__options--price" id="bedrooms">
+                    <option class="room__item" value="1">$500 /wk</option>
+                    <option class="room__item" value="2">$1,000 /wk</option>
+                    <option class="room__item" value="3">$1,500 /wk</option>
+                    <option class="room__item" value="4">Up to $2,000 /wk</option>
+                  </select>
+                </div>
+              </div>
+              <div class="type">
+                <h3 class="room__name room__name--type">Property type</h3>
+                <div class="type__box">
+                  <label class="type__name" for="house">House
+                    <input class="type__check" type="radio" id="house" name="checkbox"/><span class="type__checkmark"></span>
+                  </label>
+                  <label class="type__name" for="apartment">Apartment
+                    <input class="type__check" type="radio" id="apartment" name="checkbox"/><span class="type__checkmark"></span>
+                  </label>
+                  <label class="type__name" for="loft">Loft
+                    <input class="type__check" type="radio" id="loft" name="checkbox"/><span class="type__checkmark"></span>
+                  </label>
+                  <label class="type__name" for="townhouse">Townhouse
+                    <input class="type__check" type="radio" id="townhouse" name="checkbox"/><span class="type__checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="type type--amenities">
+                <h3 class="room__name room__name--amenities">Amenities</h3>
+                <div class="type__box">
+                  <label class="type__name type__name--amenities" for="Balcony">Balcony
+                    <input class="type__check type__check--amenities" type="checkbox" id="Balcony"/><span class="type__checkmark type__checkmark--amenities"></span>
+                  </label>
+                  <label class="type__name type__name--amenities" for="Air conditioning">Air conditioning
+                    <input class="type__check type__check--amenities" type="checkbox" id="Air conditioning"/><span class="type__checkmark type__checkmark--amenities"></span>
+                  </label>
+                  <label class="type__name type__name--amenities" for="Pool">Pool
+                    <input class="type__check type__check--amenities" type="checkbox" id="Pool"/><span class="type__checkmark type__checkmark--amenities"></span>
+                  </label>
+                  <label class="type__name type__name--amenities" for="Beach">Beach
+                    <input class="type__check type__check--amenities" type="checkbox" id="Beach"/><span class="type__checkmark type__checkmark--amenities"></span>
+                  </label>
+                  <label class="type__name type__name--amenities" for="Pet friendly">Pet friendly
+                    <input class="type__check type__check--amenities" type="checkbox" id="Pet friendly"/><span class="type__checkmark type__checkmark--amenities"></span>
+                  </label>
+                  <label class="type__name type__name--amenities" for="Kid friendly">Kid friendly
+                    <input class="type__check type__check--amenities" type="checkbox" id="Kid friendly"/><span class="type__checkmark type__checkmark--amenities"></span>
+                  </label>
+                  <label class="type__name type__name--amenities" for="Parking">Parking
+                    <input class="type__check type__check--amenities" type="checkbox" id="Parking"/><span class="type__checkmark type__checkmark--amenities"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="update">
+                <button class="update__send">Update results</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="main__container">
+        <h2 class="main__title">Los Angeles</h2>
+        <div class="main__box">
+          <p class="main__text">Live like the stars in these luxurious Southern California estates.</p><a class="main__link" href="#">View all</a>
+        </div>
+        <article class="ad">
+          <div class="ad__image"><img class="ad__pic" src="./images/la-1.png"/>
+            <section class="ad__box">
+              <p class="ad__plus">plus</p><span class="ad__text">3 beds</span><span class="ad__point"></span><span class="ad__text">2 baths</span>
+              <h2 class="ad__text ad__text--title">Modern home in city center</h2>
+              <p class="ad__price">$1,400 <span class="ad__text ad__text--size">/wk</span></p><span class="ad__stars">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#38B2AC"></path>
+                </svg>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#38B2AC"></path>
+                </svg>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#38B2AC"></path>
+                </svg>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#38B2AC"></path>
+                </svg>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#38B2AC"></path>
+                </svg></span><span class="ad__text ad__text--review">34 Reviews</span>
+            </section>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__image"><img class="ad__pic" src="./images/la-2.png"/>
+            <section class="ad__box"><span class="ad__text">4 beds</span><span class="ad__point"></span><span class="ad__text">2 baths</span>
+              <h2 class="ad__text ad__text--title">Isolated house outside of...</h2>
+              <p class="ad__price">$1,250 <span class="ad__text ad__text--size">/wk</span></p><span class="ad__stars">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#38B2AC"></path>
+                </svg>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#38B2AC"></path>
+                </svg>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#38B2AC"></path>
+                </svg>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#38B2AC"></path>
+                </svg>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#CBD5E0"></path>
+                </svg></span><span class="ad__text ad__text--review">34 Reviews</span>
+            </section>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__image"><img class="ad__pic ad__pic--mod" src="./images/la-3.png"/>
+            <section class="ad__box">
+              <p class="ad__plus">plus</p><span class="ad__text">5 beds</span><span class="ad__point"></span><span class="ad__text">4 baths</span>
+              <h2 class="ad__text ad__text--title">Large dream home with...</h2>
+              <p class="ad__price">$1,300 <span class="ad__text ad__text--size">/wk</span></p><span class="ad__stars">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#38B2AC"></path>
+                </svg>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#38B2AC"></path>
+                </svg>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#38B2AC"></path>
+                </svg>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#38B2AC"></path>
+                </svg>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#CBD5E0"></path>
+                </svg></span><span class="ad__text ad__text--review">34 Reviews</span>
+            </section>
+          </div>
+        </article>
+      </div>
+      <div class="main__container">
+        <h2 class="main__title">Phoenix</h2>
+        <div class="main__box">
+          <p class="main__text">Escape the cold and enjoy great weather without breaking the bank.</p><a class="main__link" href="#">View all</a>
+        </div>
+        <article class="ad">
+          <div class="ad__image"><img class="ad__pic" src="./images/pho-1.png"/>
+            <section class="ad__box">
+              <p class="ad__plus">plus</p><span class="ad__text">3 beds</span><span class="ad__point"></span><span class="ad__text">2 baths</span>
+              <h2 class="ad__text ad__text--title">Modern home in city center</h2>
+              <p class="ad__price">$1,400 <span class="ad__text ad__text--size">/wk</span></p><span class="ad__stars">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#38B2AC"></path>
+                </svg>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#38B2AC"></path>
+                </svg>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#38B2AC"></path>
+                </svg>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#38B2AC"></path>
+                </svg>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#38B2AC"></path>
+                </svg></span><span class="ad__text ad__text--review">34 Reviews</span>
+            </section>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__image"><img class="ad__pic" src="./images/pho-2.png"/>
+            <section class="ad__box"><span class="ad__text">4 beds</span><span class="ad__point"></span><span class="ad__text">2 baths</span>
+              <h2 class="ad__text ad__text--title">Isolated house outside of...</h2>
+              <p class="ad__price">$1,250 <span class="ad__text ad__text--size">/wk</span></p><span class="ad__stars">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#38B2AC"></path>
+                </svg>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#38B2AC"></path>
+                </svg>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#38B2AC"></path>
+                </svg>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#38B2AC"></path>
+                </svg>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#CBD5E0"></path>
+                </svg></span><span class="ad__text ad__text--review">34 Reviews</span>
+            </section>
+          </div>
+        </article>
+        <article class="ad">
+          <div class="ad__image"><img class="ad__pic ad__pic--mod" src="./images/pho-3.png"/>
+            <section class="ad__box">
+              <p class="ad__plus">plus</p><span class="ad__text">5 beds</span><span class="ad__point"></span><span class="ad__text">4 baths</span>
+              <h2 class="ad__text ad__text--title">Large dream home with...</h2>
+              <p class="ad__price">$1,300 <span class="ad__text ad__text--size">/wk</span></p><span class="ad__stars">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#38B2AC"></path>
+                </svg>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#38B2AC"></path>
+                </svg>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#38B2AC"></path>
+                </svg>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#38B2AC"></path>
+                </svg>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.28279 10.9302C2.54916 11.3159 1.69173 10.6929 1.83184 9.87604L2.30425 7.12166L0.303081 5.171C-0.290436 4.59247 0.0370741 3.58449 0.857294 3.46531L3.62285 3.06345L4.85964 0.557434C5.22645 -0.185811 6.2863 -0.185811 6.65311 0.557434L7.8899 3.06345L10.6555 3.46531C11.4757 3.58449 11.8032 4.59247 11.2097 5.171L9.2085 7.12166L9.68091 9.87604C9.82102 10.6929 8.96359 11.3159 8.22996 10.9302L5.75638 9.62978L3.28279 10.9302Z" fill="#CBD5E0"></path>
+                </svg></span><span class="ad__text ad__text--review">34 Reviews</span>
+            </section>
+          </div>
+        </article>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

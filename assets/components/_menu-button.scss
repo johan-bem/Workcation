@@ -1,0 +1,32 @@
+
+.menu{
+    &__inner, .menu__inner:after, .menu__inner:before{
+        background: $blue-200;
+        position: absolute;
+        width: 1.125rem;
+        height: .125rem;
+        border-radius: 2px;
+        content: "";
+      }
+      
+      &__inner:before{
+        top:6px;
+      }
+      
+      &__inner:after{
+       top: 12px;
+        
+      }
+}
+
+.menu__logo.open .menu__inner{
+    transform: translate3d(0,5px,0) rotate(45deg);
+ }
+ 
+ .menu__logo.open .menu__inner:after{
+    transform: translate3d(0,-12px,0) rotate(-90deg);
+ }
+ 
+ .menu__logo.open .menu__inner:before{
+     transform: translate3d(0,-6px,0) rotate(90deg);
+ }

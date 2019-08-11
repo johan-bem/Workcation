@@ -1,0 +1,101 @@
+.box{
+    background: $blue-800;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .7rem .7rem .65rem 1rem;
+    position: relative;
+        @media screen and (min-width: 760px){
+        padding-right: 1.5rem; 
+        }
+            @media screen and (min-width: 1200px){
+                background: $white-100;
+                position: absolute;
+                width: 78%;
+                left: 20%;
+                top: 0;
+            }
+
+    &__box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 100%;
+    }
+
+    &__text{
+        border-radius: .5rem;
+        min-height: 2.5rem;
+        border: none;
+        background: url('../images/secondary.svg') no-repeat .8rem ;
+        background-color: $blue-900;
+        color: $blue-200;
+        padding-left: 2.3rem;
+        min-width: 8rem;
+        @media screen and (min-width: 760px){
+        min-width: 22.5rem;
+        }
+            @media screen and (min-width: 1200px){
+                background: url('../images/secondary.svg') no-repeat .8rem ;
+                background-color: $white-200;
+            }
+    }
+    &__button{
+        border-radius: .5rem;
+        background: $blue-300;
+        border: none;
+        display: flex;
+        align-items: center;
+        min-height: 1.5rem;
+        padding: .3rem 1rem .3rem.8rem;
+        margin-left: 1rem;
+            @media screen and (min-width: 1200px){
+                display: none;
+            }
+    }
+
+    &__container{
+        position: relative;
+        width: 1.2rem;
+        height: 1.8rem;
+        display: flex;
+        justify-content: center;
+        margin-right: 10px;
+    }
+    &__lines--mod{
+        width: 1.2rem;
+        top: 20%;
+    }
+    &__lines, .box__lines:after, .box__lines:before{
+        height: 2px;
+        background: $blue-200;
+        border-radius: 2px;
+        content: "";
+        position: absolute;
+    }
+    &__lines:after{
+        top: 6px;
+        width: .8rem;
+        left: 14%;
+
+    }
+    &__lines:before{
+        top: 12px;
+        left: 35%;
+        width: .35rem;
+    }
+    &__word{
+        color: $white-100;
+    }
+}
+::placeholder{
+    color: $blue-200;
+    @media screen and (min-width: 1200px){
+        color: $blue-250;
+    }
+}
+.moving{
+    margin-top: 339px;
+        @media screen and (min-width: 1200px){
+        }
+}

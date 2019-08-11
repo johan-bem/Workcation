@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Muli';
+    src: url('Muli-Bold.eot');
+    src: url('Muli-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Muli-Bold.woff2') format('woff2'),
+        url('Muli-Bold.woff') format('woff'),
+        url('Muli-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+

@@ -1,0 +1,32 @@
+.list {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 344px;
+  background: #1A202C;
+  top: 100%;
+  right: 0; }
+  .list__line {
+    height: 1px;
+    background: #FFFFFF;
+    border: 1px #FFFFFF;
+    width: 100%; }
+  .list__container {
+    border: 2px solid green;
+    list-style: none;
+    line-height: 26px; }
+  .list__item {
+    -webkit-transition: all 5s;
+    -o-transition: all 5s;
+    transition: all 5s; }
+  .list__anchor {
+    text-decoration: none;
+    color: #FFFFFF; }
+  .list__anchor--color {
+    color: #CBD5E0; }
+
+.show {
+  display: block;
+  -webkit-transition: all 5s;
+  -o-transition: all 5s;
+  transition: all 5s; }

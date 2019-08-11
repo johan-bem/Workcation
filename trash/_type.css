@@ -1,0 +1,54 @@
+/*.type{
+    border: 1px solid red;
+    background: $blue-800;
+    &__box{
+        border: 1px solid green;
+    }
+
+    &__color{
+        background: $blue-900;
+        width: 1.5rem;
+        height: 1.5rem;
+        position: relative;
+        border-radius: 100%;
+        color: white;
+    }
+    &__drawer{
+        border: 1px solid orange;
+        display: flex;
+        align-items: center;
+        height: 3rem;
+    }
+
+    &__check{
+        width: 1.5rem;
+        height: 1.5rem;
+        //position: absolute;
+        //opacity: 0;
+    }
+
+    &__lab{
+        border: 1px solid white;
+        display: flex;
+        align-items: center;
+    }
+
+    &__name{
+        color: $white-100;
+        margin-left: .5rem;
+        font-weight: 300;
+    }
+}*/
+input[type="radio"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  background: red;
+  height: 16px;
+  width: 16px;
+  border: 1px solid white; }
+
+input[type="radio"]:checked {
+  background: #2aa1c0; }

@@ -1,0 +1,33 @@
+.box(id="box")
+    .box__box
+        input.box__text(type="text" placeholder="Search by keywords")
+        button.box__button(id="filters")
+            .box__container
+                span.box__lines.box__lines--mod
+            span.box__word Filters
+        form.data( id='features' action="define la locación (una URL) desde donde la información recolectada por el formulario debería enviarse." method="define con que método HTTP se enviará la información (puede ser get o post")
+            .master
+                .room
+                    .room__box
+                        label.room__name(type="text") Bedrooms
+                        select.room__options(id="bedrooms")
+                            option.room__item(value="1") 1
+                            option.room__item(value="2") 2
+                            option.room__item(value="3") 3
+                            option.room__item(value="4") 4
+                    .room__box
+                        label.room__name(type="text") Bathrooms
+                        select.room__options(id="bedrooms")
+                            option.room__item(value="1") 1
+                            option.room__item(value="2") 2
+                    .room__box.room__box--large
+                        label.room__name(type="text") Price Range
+                        select.room__options.room__options--price(id="bedrooms")
+                            option.room__item(value="1") $500 /wk
+                            option.room__item(value="2") $1,000 /wk
+                            option.room__item(value="3") $1,500 /wk
+                            option.room__item(value="4") Up to $2,000 /wk
+                include form_type.pug
+                include form_amenities.pug
+                .update
+                    button.update__send Update results

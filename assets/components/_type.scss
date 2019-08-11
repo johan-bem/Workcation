@@ -1,0 +1,121 @@
+.type{
+    background: $blue-800;
+    padding: 1rem;
+    border-bottom: 2px solid $blue-900;
+                @media screen and (min-width: 1024px){
+                    border-left: 1px solid $blue-900;
+                    flex: 2;
+                    flex-wrap: initial;
+                }
+                    @media screen and (min-width: 1200px){
+                        padding: .5rem 1rem;
+                    }
+    
+    &--amenities{
+                @media screen and (min-width: 1024px){
+                    justify-content: center;
+                    padding-left: 2.5rem;
+                    flex: 4;
+                }
+                @media screen and (min-width: 1200px){
+                    padding: .6rem 1rem;
+                    top: 0;
+                    }
+    }
+    
+    &__name{
+        position: relative;
+        padding: .7rem 2rem;
+        display: block;
+        color: $white-100;
+        font-weight: 300;
+            @media screen and (min-width: 760px){
+                min-width: 16%;
+            }
+
+                @media screen and (min-width: 1024px){
+                    margin-top: 8%;
+                    display: block;
+                    width: 100%;
+                }
+                @media screen and (min-width: 1200px){
+                    margin: 0;
+                    line-height: 0.4;
+                }
+
+            &--amenities{
+                @media screen and (min-width: 1024px){
+                    max-width: 32%;
+                    margin-top: 3.5%;
+                }
+                @media screen and (min-width: 1200px){
+                    min-width: 70%;
+                    //border: 1px solid red;
+                    line-height: 0.1;
+                    }
+            }
+        /*&:hover .type__check ~ .type__checkmark{
+            background: $blue-400;
+        }
+        &--amenities:hover .type__check--amenities ~ .type__checkmark--amenities{
+            background: $blue-900;
+        }*/
+    }
+
+    &__box{
+        @media screen and (min-width: 760px){
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__check{
+        position: absolute;
+        display: none;
+
+        &:checked ~ .type__checkmark{
+            background: $blue-400;
+        }
+        &:checked ~.type__checkmark:after{
+            display: block;
+        }
+    }
+
+    &__checkmark{
+        position: absolute;
+        top: 15%;
+        left: 0;
+        height: 1.6rem;
+        width: 1.6rem;
+        background: $blue-900;
+        border-radius: 50%;
+        &--amenities{
+            border-radius: 20%;
+        }
+    }
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    &__checkmark:after{
+        content: '';
+        position: absolute;
+        display: none;
+    }
+    &__checkmark:after {
+        top: .5rem;
+        left: .5rem;
+        width: .6rem;
+        height: .6rem;
+        border-radius: 100%;
+        background: white;
+    }
+
+    &__checkmark--amenities:after {
+        top: .5rem;
+        left: .5rem;
+        width: .6rem;
+        height: .6rem;
+        border-radius: 100%;
+        background: url('../images/check.svg') no-repeat;
+    }
+}
+

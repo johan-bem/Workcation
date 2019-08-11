@@ -1,0 +1,7 @@
+.room {
+  border: 5px solid red;
+  width: 350px;
+  height: 100px; }
+  .room__options {
+    width: 800px;
+    border: 2px solid red; }

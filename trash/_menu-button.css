@@ -1,0 +1,25 @@
+.menu__inner, .menu .menu__inner:after, .menu .menu__inner:before {
+  background: #A3BFFA;
+  position: absolute;
+  width: 1.125rem;
+  height: .125rem;
+  border-radius: 1px;
+  content: ""; }
+
+.menu__inner:before {
+  top: 4px; }
+
+.menu__inner:after {
+  top: 8px; }
+
+.menu__logo.open .menu__inner {
+  -webkit-transform: translate3d(0, 5px, 0) rotate(45deg);
+  transform: translate3d(0, 5px, 0) rotate(45deg); }
+
+.menu__logo.open .menu__inner:after {
+  -webkit-transform: translate3d(0, -8px, 0) rotate(-90deg);
+  transform: translate3d(0, -8px, 0) rotate(-90deg); }
+
+.menu__logo.open .menu__inner:before {
+  -webkit-transform: translate3d(0, -4px, 0) rotate(90deg);
+  transform: translate3d(0, -4px, 0) rotate(90deg); }

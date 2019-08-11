@@ -1,0 +1,185 @@
+.data{
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    min-width: 100%;
+    z-index: 100;
+    overflow: hidden;
+        @media screen and (min-width: 1200px){
+            display: block;
+        }
+}
+.master{
+    @media screen and (min-width: 1024px){
+        display: flex;
+        flex-wrap: wrap;
+        border-top: 1px solid $blue-900; 
+    }
+        @media screen and (min-width: 1200px){
+            position: fixed;
+            top:60px;
+            left: 0;
+            width: 20%;
+            display: block;
+        }
+}
+.room{
+    background: $blue-800;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem ;
+    border-top: 2px solid $blue-900;
+    border-bottom: 2px solid $blue-900;
+        @media screen and (min-width: 760px){
+            border-top: 0;   
+        }
+                @media screen and (min-width: 1024px){
+                        flex: 3;
+                }
+
+                    @media screen and (min-width: 1200px){
+                        padding: .5rem 1rem;
+                        height: 8rem;
+
+                    }
+                    
+    &__box{
+        width: 48%;
+            @media screen and (min-width: 760px){
+            width: 25%;  
+            }
+
+                    @media screen and (min-width: 1024px){
+                        width: 47.5%;
+                        height: 30%;   
+                    }
+                    @media screen and (min-width: 1200px){
+                        max-height: 4rem; 
+                    }
+        &--large{
+            width: 100%;
+                @media screen and (min-width: 760px){
+                width: 45%;
+            }
+
+                    @media screen and (min-width: 1024px){
+                        position: relative;
+                        top: -2rem;
+                        width: 100%;   
+                    }
+                    @media screen and (min-width: 1200px){
+                        margin-top: 4rem;
+                    }
+        }
+    }
+
+    &__name{
+        &--type{ //por qué si pongo esto bajo las declaraciones ya no funciona?
+            margin-bottom: .5rem;
+        }
+        color: $blue-200 ;
+        font-weight: 500;
+        display: inline;
+        width: 30%;
+        margin-bottom: .5rem;
+        font-size: 0.875rem;
+            @media screen and (min-width: 760px){
+                display: block;
+        }
+
+                    @media screen and (min-width: 1024px){
+                    display: inline;
+                }
+
+                @media screen and (min-width: 1200px){
+                    margin-top: 1rem;
+                }
+        
+    }
+
+    &__options{
+        width: 100%;
+        border: none;
+        min-height: 2.5rem;
+        border-radius: .5rem;
+        color: $white-100;
+        margin-bottom: 1.8rem;
+        appearance: none;
+        background: url('../images/arrow.svg') no-repeat 95%;
+        background-color: $blue-300;
+        padding: 0 1rem;
+            @media screen and (min-width: 760px){
+                width: 90%;   
+            }
+
+                    @media screen and (min-width: 1024px){
+                        width: 100%;
+                    }
+                    @media screen and (min-width: 1200px){
+                        min-height: 2.3rem;
+                    }
+                    
+        &--price{
+            width: 100%;
+            margin-bottom: .3rem;
+            background-position: 97%;
+                @media screen and (min-width: 760px){
+                //width: auto;
+            }
+
+                    @media screen and (min-width: 1024px){
+                        width: 100%;
+                        display: block;
+                    }
+        }
+    }
+
+    &__item{
+       
+    }
+}
+.update{
+    background: $blue-900;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem;
+        @media screen and (min-width: 760px){
+            justify-content: flex-start;
+        }
+
+            @media screen and (min-width: 1024px){
+                width: 100%;
+            }
+                @media screen and (min-width: 1200px){
+                    display: block;
+                    //border: 1px solid red;
+                    width: 100%;
+                    padding: 1rem 0;
+                    }
+
+    &__send{
+        border: none;
+        background: $blue-400;
+        color: $white-100;
+        font-weight: 500;
+        width: 100%;
+        padding: .5rem;
+            @media screen and (min-width: 760px){
+                width: 24%;
+                height: 3rem;
+                border-radius: .5rem;
+        }
+                @media screen and (min-width: 1024px){
+                    width: 18%;
+                }
+                @media screen and (min-width: 1200px){
+                    min-width: 80%;
+                    }
+    }
+}
+
+.deploy{
+    display: block;
+}
